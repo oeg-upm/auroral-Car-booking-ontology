@@ -1,0 +1,122 @@
+ @prefix book: <https://auroral.iot.linkeddata.es/def/car-booking#> .
+@prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+book: a owl:Ontology ;
+    dc:creator "Ahlem Rhayem",
+        "Andrea Cimmino",
+        "Juan Cano",
+        "María Poveda-Villalón",
+        "Raúl Garcia-Castro" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "The AURORAL car-booking Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+book:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain book:Address ;
+    rdfs:range xsd:string .
+
+book:brand a owl:DatatypeProperty ;
+    rdfs:label "brand" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:bufferedEnd a owl:DatatypeProperty ;
+    rdfs:label "buffered end" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:dateTime .
+
+book:city a owl:DatatypeProperty ;
+    rdfs:label "city" ;
+    rdfs:domain book:Address ;
+    rdfs:range xsd:string .
+
+book:created a owl:DatatypeProperty ;
+    rdfs:label "created" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:dateTime .
+
+book:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has address" .
+
+book:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:liftOffer a owl:DatatypeProperty ;
+    rdfs:label "lift offer" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:boolean .
+
+book:makesReservation a owl:ObjectProperty ;
+    rdfs:label "makes reservation" ;
+    rdfs:domain core:User ;
+    rdfs:range book:Reservation .
+
+book:model a owl:DatatypeProperty ;
+    rdfs:label "model" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:note a owl:DatatypeProperty ;
+    rdfs:label "note" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:string .
+
+book:relatedTo a owl:ObjectProperty ;
+    rdfs:label "related to" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range book:Vehicle .
+
+book:reservationEnd a owl:DatatypeProperty ;
+    rdfs:label "reservation end" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:dateTime .
+
+book:reservationStart a owl:DatatypeProperty ;
+    rdfs:label "reservation start" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:dateTime .
+
+book:state a owl:DatatypeProperty ;
+    rdfs:label "state" ;
+    rdfs:domain book:Reservation ;
+    rdfs:range xsd:string .
+
+book:timeZone a owl:DatatypeProperty ;
+    rdfs:label "time zone>" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:type a owl:DatatypeProperty ;
+    rdfs:label "type" ;
+    rdfs:domain book:Vehicle ;
+    rdfs:range xsd:string .
+
+book:zip a owl:DatatypeProperty ;
+    rdfs:label "zip" ;
+    rdfs:domain book:Address ;
+    rdfs:range xsd:string .
+
+core:User a owl:Class ;
+    rdfs:label "User" .
+
+book:Address a owl:Class ;
+    rdfs:label "Address" .
+
+book:Vehicle a owl:Class ;
+    rdfs:label "Vehicle" .
+
+book:Reservation a owl:Class ;
+    rdfs:label "Reservation" .
+
