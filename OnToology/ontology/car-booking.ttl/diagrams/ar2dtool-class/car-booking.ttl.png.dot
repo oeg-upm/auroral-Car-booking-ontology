@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "book:Reservation" "book:Vehicle" "book:Address" "core:User" ; /*classes style*/
+	"book:Vehicle" -> "xsd:string" [ label = "book:type" ];
+	"book:Reservation" -> "xsd:dateTime" [ label = "book:bufferedEnd" ];
+	"book:Reservation" -> "xsd:string" [ label = "book:state" ];
+	"book:Address" -> "xsd:string" [ label = "book:zip" ];
+	"book:Address" -> "xsd:string" [ label = "book:address" ];
+	"book:Reservation" -> "xsd:string" [ label = "book:note" ];
+	"book:Vehicle" -> "xsd:string" [ label = "book:identifier" ];
+	"book:Vehicle" -> "xsd:string" [ label = "book:label" ];
+	"book:Reservation" -> "xsd:dateTime" [ label = "book:reservationEnd" ];
+	"book:Reservation" -> "xsd:dateTime" [ label = "book:reservationStart" ];
+	"core:User" -> "book:Reservation" [ label = "book:makesReservation" ];
+	"book:Reservation" -> "book:Vehicle" [ label = "book:relatedTo" ];
+	"book:Reservation" -> "xsd:boolean" [ label = "book:liftOffer" ];
+	"book:Reservation" -> "xsd:dateTime" [ label = "book:created" ];
+	"book:Vehicle" -> "xsd:string" [ label = "book:model" ];
+	"book:Address" -> "xsd:string" [ label = "book:city" ];
+	"book:Vehicle" -> "xsd:string" [ label = "book:brand" ];
+	"book:Vehicle" -> "xsd:string" [ label = "book:timeZone" ];
+
+}
