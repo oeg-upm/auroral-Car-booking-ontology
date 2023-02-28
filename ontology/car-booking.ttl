@@ -44,8 +44,8 @@ book:hasAddress rdf:type owl:ObjectProperty ;
                 rdfs:label "has address" .
 
 
-###  https://auroral.iot.linkeddata.es/def/car-booking#madeBY
-book:madeBY rdf:type owl:ObjectProperty ;
+###  https://auroral.iot.linkeddata.es/def/car-booking#madeBy
+book:madeBy rdf:type owl:ObjectProperty ;
             rdfs:domain book:Reservation ;
             rdfs:range core:User .
 
@@ -136,6 +136,12 @@ book:note rdf:type owl:DatatypeProperty ;
           rdfs:domain book:Reservation ;
           rdfs:range xsd:string ;
           rdfs:label "note" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#purpose
+book:purpose rdf:type owl:DatatypeProperty ;
+             rdfs:domain book:Reservation ;
+             rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd
