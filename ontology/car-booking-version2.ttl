@@ -10,7 +10,7 @@
 @base <https://auroral.iot.linkeddata.es/def/car-booking#> .
 
 <https://auroral.iot.linkeddata.es/def/car-booking#> rdf:type owl:Ontology ;
-                                                      owl:versionIRI <https://auroral.iot.linkeddata.es/def/car-booking#/1.0.1> ;
+                                                      owl:versionIRI <https://auroral.iot.linkeddata.es/def/car-booking#/1.0.2> ;
                                                       dc:creator "Ahlem Rhayem" ,
                                                                  "Andrea Cimmino" ,
                                                                  "Juan Cano" ,
@@ -45,10 +45,17 @@ book:hasAddress rdf:type owl:ObjectProperty ;
                 rdfs:label "has address" .
 
 
+###  https://auroral.iot.linkeddata.es/def/car-booking#hasTime
+book:hasTime rdf:type owl:ObjectProperty ;
+             rdfs:domain book:Reservation ;
+             rdfs:label "has time" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/car-booking#madeBy
 book:madeBy rdf:type owl:ObjectProperty ;
             rdfs:domain book:Reservation ;
-            rdfs:range core:User .
+            rdfs:range core:User ;
+            rdfs:label "made by" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#makesReservation
@@ -85,7 +92,7 @@ book:brand rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd
 book:bufferedEnd rdf:type owl:DatatypeProperty ;
-                 rdfs:domain book:Reservation ;
+                 rdfs:domain book:ReservationTime ;
                  rdfs:range xsd:dateTime ;
                  rdfs:label "buffered end" .
 
@@ -99,9 +106,16 @@ book:city rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#created
 book:created rdf:type owl:DatatypeProperty ;
-             rdfs:domain book:Reservation ;
+             rdfs:domain book:ReservationTime ;
              rdfs:range xsd:dateTime ;
              rdfs:label "created" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#hasType
+book:hasType rdf:type owl:DatatypeProperty ;
+             rdfs:domain book:Vehicle ;
+             rdfs:range xsd:string ;
+             rdfs:label "has type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#identifier
@@ -142,19 +156,20 @@ book:note rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/car-booking#purpose
 book:purpose rdf:type owl:DatatypeProperty ;
              rdfs:domain book:Reservation ;
-             rdfs:range xsd:string .
+             rdfs:range xsd:string ;
+             rdfs:label "purpose" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd
 book:reservationEnd rdf:type owl:DatatypeProperty ;
-                    rdfs:domain book:Reservation ;
+                    rdfs:domain book:ReservationTime ;
                     rdfs:range xsd:dateTime ;
                     rdfs:label "reservation end" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#reservationStart
 book:reservationStart rdf:type owl:DatatypeProperty ;
-                      rdfs:domain book:Reservation ;
+                      rdfs:domain book:ReservationTime ;
                       rdfs:range xsd:dateTime ;
                       rdfs:label "reservation start" .
 
@@ -170,14 +185,7 @@ book:state rdf:type owl:DatatypeProperty ;
 book:timeZone rdf:type owl:DatatypeProperty ;
               rdfs:domain book:Vehicle ;
               rdfs:range xsd:string ;
-              rdfs:label "time zone>" .
-
-
-###  https://auroral.iot.linkeddata.es/def/car-booking#type
-book:type rdf:type owl:DatatypeProperty ;
-          rdfs:domain book:Vehicle ;
-          rdfs:range xsd:string ;
-          rdfs:label "type" .
+              rdfs:label "time zone" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#zip
@@ -199,6 +207,11 @@ book:Address rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/car-booking#Reservation
 book:Reservation rdf:type owl:Class ;
                  rdfs:label "Reservation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime
+book:ReservationTime rdf:type owl:Class ;
+                     rdfs:label "Reservation Time" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#Vehicle
