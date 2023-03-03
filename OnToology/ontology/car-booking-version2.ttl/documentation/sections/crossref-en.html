@@ -12,6 +12,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
       </li>
       <li>
+         <a href="#ReservationTime"
+            title="https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime">Reservation Time</a>
+      </li>
+      <li>
          <a href="#https://auroral.iot.linkeddata.es/def/core#User" title="https://auroral.iot.linkeddata.es/def/core#User">User</a>
       </li>
       <li>
@@ -49,11 +53,9 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#bufferedEnd"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd">buffered end</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#created"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#created">created</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#liftOffer"
+            <a href="#hasTime"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#hasTime">has time</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#liftOffer"
                title="https://auroral.iot.linkeddata.es/def/car-booking#liftOffer">lift offer</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#madeBy"
                title="https://auroral.iot.linkeddata.es/def/car-booking#madeBy">made by</a>
@@ -63,11 +65,7 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/car-booking#purpose">purpose</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedTo"
                title="https://auroral.iot.linkeddata.es/def/car-booking#relatedTo">related to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#reservationEnd"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd">reservation end</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#reservationStart"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#reservationStart">reservation start</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#state"
+            <sup class="type-op" title="object property">op</sup>, <a href="#state"
                title="https://auroral.iot.linkeddata.es/def/car-booking#state">state</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -76,6 +74,28 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#makesReservation"
                title="https://auroral.iot.linkeddata.es/def/car-booking#makesReservation">makes reservation</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReservationTime">
+      <h3>Reservation Time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#bufferedEnd"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd">buffered end</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#created"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#created">created</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#reservationEnd"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd">reservation end</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#reservationStart"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#reservationStart">reservation start</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -113,6 +133,8 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#brand"
                title="https://auroral.iot.linkeddata.es/def/car-booking#brand">brand</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasType"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#hasType">has type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#identifier"
                title="https://auroral.iot.linkeddata.es/def/car-booking#identifier">identifier</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#label"
@@ -120,9 +142,7 @@ This section provides details for each class and property defined by The AURORAL
             <sup class="type-dp" title="data property">dp</sup>, <a href="#model"
                title="https://auroral.iot.linkeddata.es/def/car-booking#model">model</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#timeZone"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#timeZone">time zone&gt;</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#type"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#type">type</a>
+               title="https://auroral.iot.linkeddata.es/def/car-booking#timeZone">time zone</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -141,10 +161,12 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/car-booking#hasAddress">has address</a>
       </li>
       <li>
+         <a href="#hasTime"
+            title="https://auroral.iot.linkeddata.es/def/car-booking#hasTime">has time</a>
+      </li>
+      <li>
          <a href="#madeBy"
-            title="https://auroral.iot.linkeddata.es/def/car-booking#madeBy">
-            <span>made by</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/car-booking#madeBy">made by</a>
       </li>
       <li>
          <a href="#makesReservation"
@@ -162,6 +184,24 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#hasAddress</p>
+   </div>
+   <div class="entity" id="hasTime">
+      <h3>has time<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#hasTime</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reservation"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="madeBy">
       <h3>made by<sup class="type-op" title="object property">op</sup>
@@ -257,6 +297,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/car-booking#created">created</a>
       </li>
       <li>
+         <a href="#hasType"
+            title="https://auroral.iot.linkeddata.es/def/car-booking#hasType">has type</a>
+      </li>
+      <li>
          <a href="#identifier"
             title="https://auroral.iot.linkeddata.es/def/car-booking#identifier">identifier</a>
       </li>
@@ -278,9 +322,7 @@ This section provides details for each class and property defined by The AURORAL
       </li>
       <li>
          <a href="#purpose"
-            title="https://auroral.iot.linkeddata.es/def/car-booking#purpose">
-            <span>purpose</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/car-booking#purpose">purpose</a>
       </li>
       <li>
          <a href="#reservationEnd"
@@ -296,11 +338,7 @@ This section provides details for each class and property defined by The AURORAL
       </li>
       <li>
          <a href="#timeZone"
-            title="https://auroral.iot.linkeddata.es/def/car-booking#timeZone">time zone&gt;</a>
-      </li>
-      <li>
-         <a href="#type"
-            title="https://auroral.iot.linkeddata.es/def/car-booking#type">type</a>
+            title="https://auroral.iot.linkeddata.es/def/car-booking#timeZone">time zone</a>
       </li>
       <li>
          <a href="#zip"
@@ -366,8 +404,8 @@ This section provides details for each class and property defined by The AURORAL
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Reservation"
-                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
+               <a href="#ReservationTime"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime">Reservation Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -414,8 +452,8 @@ This section provides details for each class and property defined by The AURORAL
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Reservation"
-                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
+               <a href="#ReservationTime"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime">Reservation Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -423,6 +461,30 @@ This section provides details for each class and property defined by The AURORAL
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasType">
+      <h3>has type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#hasType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -582,8 +644,8 @@ This section provides details for each class and property defined by The AURORAL
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Reservation"
-                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
+               <a href="#ReservationTime"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime">Reservation Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -606,8 +668,8 @@ This section provides details for each class and property defined by The AURORAL
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Reservation"
-                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
+               <a href="#ReservationTime"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#ReservationTime">Reservation Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -644,36 +706,12 @@ This section provides details for each class and property defined by The AURORAL
       </div>
    </div>
    <div class="entity" id="timeZone">
-      <h3>time zone&gt;<sup class="type-dp" title="data property">dp</sup>
+      <h3>time zone<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#timeZone</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Vehicle"
-                  title="https://auroral.iot.linkeddata.es/def/car-booking#Vehicle">Vehicle</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="type">
-      <h3>type<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#type</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
