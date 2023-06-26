@@ -1,0 +1,223 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/car-booking#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09>
+        a            sh:PropertyShape ;
+        rdfs:label   "brand" ;
+        sh:datatype  xsd:string ;
+        sh:name      "brand" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :brand ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b>
+        a            sh:PropertyShape ;
+        rdfs:label   "city" ;
+        sh:datatype  xsd:string ;
+        sh:name      "city" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :city ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#5d81b0d004ae350859ea29a02854ed17>
+        a               sh:NodeShape ;
+        rdfs:label      "Vehicle" ;
+        sh:name         "Vehicle" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523> , <https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c> , <https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d> , <https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6> , <https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09> , <https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93> ;
+        sh:targetClass  :Vehicle .
+
+<https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144>
+        a            sh:PropertyShape ;
+        rdfs:label   "state" ;
+        sh:datatype  xsd:string ;
+        sh:name      "state" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :state ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/report/02136010867>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/car-booking/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4>
+        a            sh:PropertyShape ;
+        rdfs:label   "buffered end" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "buffered end" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :bufferedEnd ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#19efed53ed312a2a5849e0106a5cb991>
+        a            sh:PropertyShape ;
+        rdfs:label   "has address" ;
+        sh:name      "has address" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasAddress .
+
+<https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f>
+        a            sh:PropertyShape ;
+        rdfs:label   "lift offer" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "lift offer" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :liftOffer ;
+        sh:pattern   "true|false|0|1" .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#19efed53ed312a2a5849e0106a5cb991> , <https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636> , <https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c> , <https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f> , <https://astrea.linkeddata.es/shapes#d3ca8f324ea3fa0ad2f7e33962c65b6e> , <https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754> , <https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d> , <https://astrea.linkeddata.es/shapes#5d81b0d004ae350859ea29a02854ed17> , <https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816> , <https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b> , <https://astrea.linkeddata.es/shapes#c242ef7c8487a365bd27e291bbe297d4> , <https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523> , <https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144> , <https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f> , <https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6> , <https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3> , <https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6> , <https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f> , <https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9> , <https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4> , <https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28> , <https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09> , <https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/02136010867> .
+
+<https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6>
+        a            sh:PropertyShape ;
+        rdfs:label   "label" ;
+        sh:datatype  xsd:string ;
+        sh:name      "label" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :label ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754>
+        a               sh:NodeShape ;
+        rdfs:label      "User" ;
+        sh:name         "User" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#User> .
+
+<https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28>
+        a            sh:PropertyShape ;
+        rdfs:label   "related to" ;
+        sh:class     :Vehicle ;
+        sh:name      "related to" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :relatedTo .
+
+<https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3>
+        a            sh:PropertyShape ;
+        rdfs:label   "zip" ;
+        sh:datatype  xsd:string ;
+        sh:name      "zip" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :zip ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636>
+        a            sh:PropertyShape ;
+        rdfs:label   "address" ;
+        sh:datatype  xsd:string ;
+        sh:name      "address" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :address ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523>
+        a            sh:PropertyShape ;
+        rdfs:label   "time zone>" ;
+        sh:datatype  xsd:string ;
+        sh:name      "time zone>" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :timeZone ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c>
+        a            sh:PropertyShape ;
+        rdfs:label   "model" ;
+        sh:datatype  xsd:string ;
+        sh:name      "model" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :model ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816>
+        a            sh:PropertyShape ;
+        rdfs:label   "reservation end" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "reservation end" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :reservationEnd ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#d3ca8f324ea3fa0ad2f7e33962c65b6e>
+        a               sh:NodeShape ;
+        rdfs:label      "Reservation" ;
+        sh:name         "Reservation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28> , <https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f> , <https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f> , <https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9> , <https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6> , <https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4> , <https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816> , <https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144> ;
+        sh:targetClass  :Reservation .
+
+<https://astrea.linkeddata.es/shapes#c242ef7c8487a365bd27e291bbe297d4>
+        a               sh:NodeShape ;
+        rdfs:label      "Address" ;
+        sh:name         "Address" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b> , <https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3> , <https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636> ;
+        sh:targetClass  :Address .
+
+<https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93>
+        a            sh:PropertyShape ;
+        rdfs:label   "type" ;
+        sh:datatype  xsd:string ;
+        sh:name      "type" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :type ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f>
+        a            sh:PropertyShape ;
+        rdfs:label   "makes reservation" ;
+        sh:class     :Reservation ;
+        sh:name      "makes reservation" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :makesReservation .
+
+<https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6>
+        a            sh:PropertyShape ;
+        rdfs:label   "note" ;
+        sh:datatype  xsd:string ;
+        sh:name      "note" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :note ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d>
+        a            sh:PropertyShape ;
+        rdfs:label   "identifier" ;
+        sh:datatype  xsd:string ;
+        sh:name      "identifier" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :identifier ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f>
+        a            sh:PropertyShape ;
+        rdfs:label   "created" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "created" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :created ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9>
+        a            sh:PropertyShape ;
+        rdfs:label   "reservation start" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "reservation start" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :reservationStart ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
