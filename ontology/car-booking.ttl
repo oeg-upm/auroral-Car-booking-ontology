@@ -16,8 +16,9 @@
                                                                  "Juan Cano" ,
                                                                  "María Poveda-Villalón" ,
                                                                  "Raúl Garcia-Castro" ;
-                                                      dc:description "Ontology code created by Chowlk" ;
+                                                      dc:description "This ontology aims at modelling the car-booking data for the AURORAL project." ;
                                                       dc:title "The AURORAL car-booking Ontology" ;
+                                                      <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                                       owl:versionInfo "0.0.1" .
 
 #################################################################
@@ -36,12 +37,17 @@ dc:description rdf:type owl:AnnotationProperty .
 dc:title rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#hasAddress
 book:hasAddress rdf:type owl:ObjectProperty ;
+                rdfs:range book:Address ;
                 rdfs:label "has address" .
 
 
