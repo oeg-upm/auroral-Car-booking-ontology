@@ -1,0 +1,178 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#address
+<https://auroral.iot.linkeddata.es/def/car-booking#address> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#brand
+<https://auroral.iot.linkeddata.es/def/car-booking#brand> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd
+<https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#city
+<https://auroral.iot.linkeddata.es/def/car-booking#city> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#created
+<https://auroral.iot.linkeddata.es/def/car-booking#created> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#hasAdress
+<https://auroral.iot.linkeddata.es/def/car-booking#hasAdress> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#hasType
+<https://auroral.iot.linkeddata.es/def/car-booking#hasType> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#identifier
+<https://auroral.iot.linkeddata.es/def/car-booking#identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#label
+<https://auroral.iot.linkeddata.es/def/car-booking#label> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#lift_offer
+<https://auroral.iot.linkeddata.es/def/car-booking#lift_offer> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#madeBy
+<https://auroral.iot.linkeddata.es/def/car-booking#madeBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#model
+<https://auroral.iot.linkeddata.es/def/car-booking#model> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#purpose
+<https://auroral.iot.linkeddata.es/def/car-booking#purpose> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#relatedTo
+<https://auroral.iot.linkeddata.es/def/car-booking#relatedTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd
+<https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#reservationStart
+<https://auroral.iot.linkeddata.es/def/car-booking#reservationStart> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#state
+<https://auroral.iot.linkeddata.es/def/car-booking#state> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#timeZone
+<https://auroral.iot.linkeddata.es/def/car-booking#timeZone> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#zip
+<https://auroral.iot.linkeddata.es/def/car-booking#zip> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasEmail
+<https://auroral.iot.linkeddata.es/def/core#hasEmail> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasID
+<https://auroral.iot.linkeddata.es/def/core#hasID> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasName
+<https://auroral.iot.linkeddata.es/def/core#hasName> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#Address
+<https://auroral.iot.linkeddata.es/def/car-booking#Address> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#Reservation
+<https://auroral.iot.linkeddata.es/def/car-booking#Reservation> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#Vehicle
+<https://auroral.iot.linkeddata.es/def/car-booking#Vehicle> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#User
+<https://auroral.iot.linkeddata.es/def/core#User> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#address1
+<https://auroral.iot.linkeddata.es/def/car-booking#address1> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/car-booking#Address> ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#city> "Dornbirn" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#zip> "6850" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#address2
+<https://auroral.iot.linkeddata.es/def/car-booking#address2> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/car-booking#Address> ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#address> "Färbergasse 17b" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#city> "Teststand" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#zip> "6850" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#reservation1
+<https://auroral.iot.linkeddata.es/def/car-booking#reservation1> rdf:type owl:NamedIndividual ,
+                                                                          <https://auroral.iot.linkeddata.es/def/car-booking#Reservation> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd> "2020-02-25T17:00:00+01:00"^^xsd:dateTime ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#created> "2020-02-25T15:26:56.269446+01:00"^^xsd:dateTime ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#identifier> "538824" ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#lift_offer> "false"^^xsd:boolean ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#madeBy> <https://auroral.iot.linkeddata.es/def/core#user1> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#purpose> "0" ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#relatedTo> <https://auroral.iot.linkeddata.es/def/car-booking#vehicle1> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd> "2020-02-25T17:00:00+01:00"^^xsd:dateTime ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#reservationStart> "2020-02-25T15:00:00+01:00"^^xsd:dateTime ;
+                                                                 <https://auroral.iot.linkeddata.es/def/car-booking#state> "closed" .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#vehicle1
+<https://auroral.iot.linkeddata.es/def/car-booking#vehicle1> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/car-booking#Vehicle> ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#brand> "ILOCKIT" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#hasAdress> <https://auroral.iot.linkeddata.es/def/car-booking#adress2> ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#hasType> "[RAD1 - LCT] ILOCKIT PLUS Testschloss" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#identifier> "951" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#label> "[RAD1 - LCT]" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#model> "PLUS Testschloss" ;
+                                                             <https://auroral.iot.linkeddata.es/def/car-booking#timeZone> "Europe/Vienna" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#user1
+<https://auroral.iot.linkeddata.es/def/core#user1> rdf:type owl:NamedIndividual ,
+                                                            <https://auroral.iot.linkeddata.es/def/core#User> ;
+                                                   <https://auroral.iot.linkeddata.es/def/car-booking#hasAdress> <https://auroral.iot.linkeddata.es/def/car-booking#adress1> ;
+                                                   <https://auroral.iot.linkeddata.es/def/core#hasEmail> "christian.sutterluety@carusocarsharing.com" ;
+                                                   <https://auroral.iot.linkeddata.es/def/core#hasID> "16992" ;
+                                                   <https://auroral.iot.linkeddata.es/def/core#hasName> "Christian Sutterlüty (Fuhrparkmanager)" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

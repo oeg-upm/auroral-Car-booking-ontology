@@ -5,8 +5,9 @@
 <https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/creator> "Juan Cano" .
 <https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón" .
 <https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/creator> "Raúl Garcia-Castro" .
-<https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the car-booking data for the AURORAL project." .
 <https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/elements/1.1/title> "The AURORAL car-booking Ontology" .
+<https://auroral.iot.linkeddata.es/def/car-booking#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <https://auroral.iot.linkeddata.es/def/car-booking#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
 # 
 # 
@@ -26,6 +27,9 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -37,6 +41,7 @@
 # 
 # https://auroral.iot.linkeddata.es/def/car-booking#hasAddress
 <https://auroral.iot.linkeddata.es/def/car-booking#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/car-booking#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/car-booking#Address> .
 <https://auroral.iot.linkeddata.es/def/car-booking#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address" .
 # 
 # https://auroral.iot.linkeddata.es/def/car-booking#madeBy
@@ -95,11 +100,16 @@
 <https://auroral.iot.linkeddata.es/def/car-booking#created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://auroral.iot.linkeddata.es/def/car-booking#created> <http://www.w3.org/2000/01/rdf-schema#label> "created" .
 # 
-# https://auroral.iot.linkeddata.es/def/car-booking#identifier
-<https://auroral.iot.linkeddata.es/def/car-booking#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/car-booking#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/car-booking#Vehicle> .
-<https://auroral.iot.linkeddata.es/def/car-booking#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/car-booking#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/car-booking#Reservation> .
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/car-booking#Vehicle> .
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
 # 
 # https://auroral.iot.linkeddata.es/def/car-booking#label
 <https://auroral.iot.linkeddata.es/def/car-booking#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
