@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="21" parse.nodes="9" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="24" parse.nodes="11" parse.order="free">
       <node id="nid_book:">
          <data key="d0">
             <y:ShapeNode>
@@ -41,6 +41,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_http://purl.org/NET/rdflicense/cc-by4.0">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="390.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/NET/rdflicense/cc-by4.0</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_:license1" source="nid_book:" target="nid_http://purl.org/NET/rdflicense/cc-by4.0">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">:license</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_book:Vehicle">
          <data key="d0">
             <y:ShapeNode>
@@ -65,7 +88,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_book:type1" source="nid_book:Vehicle" target="nid_xsd:string">
+    <edge id="eid_book:type2" source="nid_book:Vehicle" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -100,7 +123,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_book:bufferedEnd2" source="nid_book:Reservation" target="nid_xsd:dateTime">
+    <edge id="eid_book:bufferedEnd3" source="nid_book:Reservation" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -111,7 +134,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:state3" source="nid_book:Reservation" target="nid_xsd:string">
+    <edge id="eid_book:state4" source="nid_book:Reservation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -122,7 +145,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:purpose4" source="nid_book:Reservation" target="nid_xsd:string">
+    <edge id="eid_book:purpose5" source="nid_book:Reservation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -145,7 +168,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_book:zip5" source="nid_book:Address" target="nid_xsd:string">
+    <edge id="eid_book:zip6" source="nid_book:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -156,7 +179,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:address6" source="nid_book:Address" target="nid_xsd:string">
+    <edge id="eid_book:address7" source="nid_book:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -167,7 +190,41 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:note7" source="nid_book:Reservation" target="nid_xsd:string">
+      <node id="nid_owl:Thing">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_book:hasAddress8" source="nid_owl:Thing" target="nid_book:Address">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">book:hasAddress</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_book:identifierVehicle9" source="nid_book:Vehicle" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">book:identifierVehicle</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_book:note10" source="nid_book:Reservation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -178,18 +235,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:identifier8" source="nid_book:Vehicle" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">book:identifier</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_book:label9" source="nid_book:Vehicle" target="nid_xsd:string">
+    <edge id="eid_book:label11" source="nid_book:Vehicle" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -200,7 +246,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:reservationEnd10" source="nid_book:Reservation" target="nid_xsd:dateTime">
+    <edge id="eid_book:reservationEnd12" source="nid_book:Reservation" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -223,7 +269,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_book:madeBy11" source="nid_book:Reservation" target="nid_core:User">
+    <edge id="eid_book:madeBy13" source="nid_book:Reservation" target="nid_core:User">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -234,7 +280,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:reservationStart12" source="nid_book:Reservation" target="nid_xsd:dateTime">
+    <edge id="eid_book:reservationStart14" source="nid_book:Reservation" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -245,7 +291,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:makesReservation13" source="nid_core:User" target="nid_book:Reservation">
+    <edge id="eid_book:makesReservation15" source="nid_core:User" target="nid_book:Reservation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -256,12 +302,23 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:relatedTo14" source="nid_book:Reservation" target="nid_book:Vehicle">
+    <edge id="eid_book:relatedTo16" source="nid_book:Reservation" target="nid_book:Vehicle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">book:relatedTo</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_book:identifierReservation17" source="nid_book:Reservation" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">book:identifierReservation</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -279,7 +336,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_book:liftOffer15" source="nid_book:Reservation" target="nid_xsd:boolean">
+    <edge id="eid_book:liftOffer18" source="nid_book:Reservation" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -290,7 +347,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:created16" source="nid_book:Reservation" target="nid_xsd:dateTime">
+    <edge id="eid_book:created19" source="nid_book:Reservation" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -301,7 +358,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:model17" source="nid_book:Vehicle" target="nid_xsd:string">
+    <edge id="eid_book:model20" source="nid_book:Vehicle" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -312,7 +369,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:city18" source="nid_book:Address" target="nid_xsd:string">
+    <edge id="eid_book:city21" source="nid_book:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -323,7 +380,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:brand19" source="nid_book:Vehicle" target="nid_xsd:string">
+    <edge id="eid_book:brand22" source="nid_book:Vehicle" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -334,7 +391,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_book:timeZone20" source="nid_book:Vehicle" target="nid_xsd:string">
+    <edge id="eid_book:timeZone23" source="nid_book:Vehicle" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

@@ -13,8 +13,9 @@
                                                                                                 "Juan Cano" ,
                                                                                                 "María Poveda-Villalón" ,
                                                                                                 "Raúl Garcia-Castro" ;
-                                                      <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                                                      <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the car-booking data for the AURORAL project." ;
                                                       <http://purl.org/dc/elements/1.1/title> "The AURORAL car-booking Ontology" ;
+                                                      <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                                       owl:versionInfo "0.0.1" .
 
 #################################################################
@@ -33,12 +34,17 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#hasAddress
 :hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:range :Address ;
             rdfs:label "has address" .
 
 
@@ -101,11 +107,17 @@
          rdfs:label "created" .
 
 
-###  https://auroral.iot.linkeddata.es/def/car-booking#identifier
-:identifier rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Vehicle ;
-            rdfs:range xsd:string ;
-            rdfs:label "identifier" .
+###  https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation
+:identifierReservation rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Reservation ;
+                       rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle
+:identifierVehicle rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Vehicle ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "identifier" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#label

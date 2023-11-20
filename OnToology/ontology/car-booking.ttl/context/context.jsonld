@@ -10,6 +10,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#created",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "bufferedEnd" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -33,6 +36,10 @@
     "liftOffer" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#liftOffer",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "identifierVehicle" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasAddress" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#hasAddress",
@@ -67,10 +74,6 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#address",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "identifier" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifier",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
@@ -85,6 +88,10 @@
     "reservationStart" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservationStart",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "identifierReservation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Vehicle" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"

@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#"
+     xmlns:astrea="https://w3id.org/def/astrea#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#name -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#name"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeKind -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#nodeKind"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#pattern -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#pattern"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#contains -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#contains"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#generatedShapesFrom -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#generatedShapesFrom"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#message -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#message"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#source -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#source"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#statusCode -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/astrea#statusCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ReportEntry -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ReportEntry"/>
+    
+
+
+    <!-- https://w3id.org/def/astrea#ShapeReport -->
+
+
+    <Class rdf:about="https://w3id.org/def/astrea#ShapeReport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://astrea.linkeddata.es/report -->
+
+
+    <NamedIndividual rdf:about="http://astrea.linkeddata.es/report">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ShapeReport"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c242ef7c8487a365bd27e291bbe297d4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d3ca8f324ea3fa0ad2f7e33962c65b6e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#19efed53ed312a2a5849e0106a5cb991"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5d81b0d004ae350859ea29a02854ed17"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144"/>
+        <astrea:generatedShapesFrom rdf:resource="https://astrea.linkeddata.es/report/02136010867"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/report/02136010867 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/report/02136010867">
+        <rdf:type rdf:resource="https://w3id.org/def/astrea#ReportEntry"/>
+        <astrea:message>Shapes generated with no errors</astrea:message>
+        <astrea:source>https://auroral.iot.linkeddata.es/def/car-booking/ontology.ttl</astrea:source>
+        <astrea:statusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#int">200</astrea:statusCode>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>city</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>city</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#city"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>related to</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"/>
+        <shacl:name>related to</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#relatedTo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>brand</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>brand</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#brand"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>makes reservation</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#Reservation"/>
+        <shacl:name>makes reservation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#makesReservation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#c242ef7c8487a365bd27e291bbe297d4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c242ef7c8487a365bd27e291bbe297d4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Address</rdfs:label>
+        <shacl:name>Address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#acd1ffbbbdb62d2aa7ad5b6dbd443b3b"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#Address"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>type</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#type"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>reservation end</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:name>reservation end</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d3ca8f324ea3fa0ad2f7e33962c65b6e -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d3ca8f324ea3fa0ad2f7e33962c65b6e">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Reservation</rdfs:label>
+        <shacl:name>Reservation</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b6fabd62d1083b0b6cdf71571b874c28"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cf9b98caa053219bc873fa918a31e816"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#Reservation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d6eaf11c6ec560fbc70129b4ec517da3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>zip</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>zip</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#zip"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>identifier</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>identifier</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#identifier"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>label</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>label</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#label"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#f382de76c6564f0ad138d0f19ba5734f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>created</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:name>created</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#created"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>User</rdfs:label>
+        <shacl:name>User</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#c0ef5182e0cd0c9e1416585f01e18c2f"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#User"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#19efed53ed312a2a5849e0106a5cb991 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#19efed53ed312a2a5849e0106a5cb991">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has address</rdfs:label>
+        <shacl:name>has address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#hasAddress"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3cb3f3eda0276526959443c271a9617f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>lift offer</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:name>lift offer</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#liftOffer"/>
+        <shacl:pattern>true|false|0|1</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3f8d9b0b26d59572b877838b78d9b7d9">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>reservation start</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:name>reservation start</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#reservationStart"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>model</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>model</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#model"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5d81b0d004ae350859ea29a02854ed17 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5d81b0d004ae350859ea29a02854ed17">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Vehicle</rdfs:label>
+        <shacl:name>Vehicle</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b7ecb93ca49c9fb078b41ad76c870e09"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cc59bde36ed66976a40c1301cd1d5c93"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d6fb140386f9254c992f4d4d34fe181d"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f2c8fdad1217d63bc2986e80ef6e19b6"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#42c47b24fc516de66f91d84efcc89e6c"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5333d679d8f3f3b84be4b00a9625f6e6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>note</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>note</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#note"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#767df9b1e0fdcd8e6a6bd2af626e7523">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>time zone&gt;</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>time zone&gt;</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#timeZone"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#77dfff49ade95cd0918fbee998b3d636">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>address</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#address"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#964b79d3e549603c080f83fbe572ecf4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>buffered end</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:name>buffered end</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#974449b7ae3c31aef0ec4293fff65144">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>state</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:name>state</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/car-booking#state"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

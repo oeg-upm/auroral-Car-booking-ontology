@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns1:reservation1" -> "ns1:vehicle1" [ label = "ns1:relatedTo" ];
+	"ns1:reservation1" -> "ns2:user1" [ label = "ns1:madeBy" ];
+	"ns2:user1" -> "ns1:adress1" [ label = "ns1:hasAdress" ];
+	"ns1:vehicle1" -> "ns1:adress2" [ label = "ns1:hasAdress" ];
+
+}

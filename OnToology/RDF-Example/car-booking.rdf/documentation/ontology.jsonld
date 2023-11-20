@@ -1,0 +1,195 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Reservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#address1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Address"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#city" : [ {
+    "@value" : "Dornbirn"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#zip" : [ {
+    "@value" : "6850"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#address2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Address"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#address" : [ {
+    "@value" : "Färbergasse 17b"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#city" : [ {
+    "@value" : "Teststand"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#zip" : [ {
+    "@value" : "6850"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#brand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#hasAdress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#lift_offer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#madeBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#relatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservation1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Reservation"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-02-25T17:00:00+01:00"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-02-25T15:26:56.269446+01:00"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#identifier" : [ {
+    "@value" : "538824"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#lift_offer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#madeBy" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#user1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#purpose" : [ {
+    "@value" : "0"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#relatedTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#vehicle1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-02-25T17:00:00+01:00"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#reservationStart" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-02-25T15:00:00+01:00"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#state" : [ {
+    "@value" : "closed"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservationStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#timeZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#vehicle1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#brand" : [ {
+    "@value" : "ILOCKIT"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#hasAdress" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#adress2"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#hasType" : [ {
+    "@value" : "[RAD1 - LCT] ILOCKIT PLUS Testschloss"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#identifier" : [ {
+    "@value" : "951"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#label" : [ {
+    "@value" : "[RAD1 - LCT]"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#model" : [ {
+    "@value" : "PLUS Testschloss"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#timeZone" : [ {
+    "@value" : "Europe/Vienna"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#zip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#user1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/car-booking#hasAdress" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#adress1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasEmail" : [ {
+    "@value" : "christian.sutterluety@carusocarsharing.com"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasID" : [ {
+    "@value" : "16992"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasName" : [ {
+    "@value" : "Christian Sutterlüty (Fuhrparkmanager)"
+  } ]
+} ]

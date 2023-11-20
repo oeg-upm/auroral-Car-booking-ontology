@@ -1,6 +1,8 @@
 <h2 id="crossreference" class="list">Cross-reference for The AURORAL car-booking Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by The AURORAL car-booking Ontology.
-<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -37,6 +39,12 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/car-booking#zip">zip</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasAddress"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#hasAddress">has address</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Reservation">
@@ -53,6 +61,8 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd">buffered end</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#created"
                title="https://auroral.iot.linkeddata.es/def/car-booking#created">created</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#identifierReservation"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation">identifier reservation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#liftOffer"
                title="https://auroral.iot.linkeddata.es/def/car-booking#liftOffer">lift offer</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#madeBy"
@@ -113,8 +123,8 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#brand"
                title="https://auroral.iot.linkeddata.es/def/car-booking#brand">brand</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#identifier"
-               title="https://auroral.iot.linkeddata.es/def/car-booking#identifier">identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#identifierVehicle"
+               title="https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle">identifier</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#label"
                title="https://auroral.iot.linkeddata.es/def/car-booking#label">label</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#model"
@@ -133,7 +143,9 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -162,6 +174,16 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#hasAddress</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Address"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#Address">Address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="madeBy">
       <h3>made by<sup class="type-op" title="object property">op</sup>
@@ -233,7 +255,9 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -257,8 +281,14 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/car-booking#created">created</a>
       </li>
       <li>
-         <a href="#identifier"
-            title="https://auroral.iot.linkeddata.es/def/car-booking#identifier">identifier</a>
+         <a href="#identifierVehicle"
+            title="https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle">identifier</a>
+      </li>
+      <li>
+         <a href="#identifierReservation"
+            title="https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation">
+            <span>identifier reservation</span>
+         </a>
       </li>
       <li>
          <a href="#label"
@@ -427,19 +457,43 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-   <div class="entity" id="identifier">
+   <div class="entity" id="identifierVehicle">
       <h3>identifier<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#identifier</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
                <a href="#Vehicle"
                   title="https://auroral.iot.linkeddata.es/def/car-booking#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="identifierReservation">
+      <h3>identifier reservation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reservation"
+                  title="https://auroral.iot.linkeddata.es/def/car-booking#Reservation">Reservation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

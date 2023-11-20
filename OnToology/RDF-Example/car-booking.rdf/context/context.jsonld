@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "Address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Address"
+    },
+    "hasEmail" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasEmail"
+    },
+    "created" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#created"
+    },
+    "bufferedEnd" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#bufferedEnd"
+    },
+    "relatedTo" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#relatedTo"
+    },
+    "model" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#model"
+    },
+    "city" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#city"
+    },
+    "brand" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#brand"
+    },
+    "hasName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasName"
+    },
+    "hasID" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID"
+    },
+    "lift_offer" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#lift_offer"
+    },
+    "label" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#label"
+    },
+    "timeZone" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#timeZone"
+    },
+    "User" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
+    },
+    "Reservation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Reservation"
+    },
+    "hasType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#hasType"
+    },
+    "hasAdress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#hasAdress"
+    },
+    "address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#address"
+    },
+    "identifier" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifier"
+    },
+    "state" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#state"
+    },
+    "reservationStart" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservationStart"
+    },
+    "Vehicle" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"
+    },
+    "madeBy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#madeBy"
+    },
+    "zip" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#zip"
+    },
+    "reservationEnd" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd"
+    },
+    "purpose" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#purpose"
+    }
+  }
+}
