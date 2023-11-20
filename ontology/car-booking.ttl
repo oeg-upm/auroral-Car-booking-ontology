@@ -110,11 +110,17 @@ book:created rdf:type owl:DatatypeProperty ;
              rdfs:label "created" .
 
 
-###  https://auroral.iot.linkeddata.es/def/car-booking#identifier
-book:identifier rdf:type owl:DatatypeProperty ;
-                rdfs:domain book:Vehicle ;
-                rdfs:range xsd:string ;
-                rdfs:label "identifier" .
+###  https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation
+book:identifierReservation rdf:type owl:DatatypeProperty ;
+                           rdfs:domain book:Reservation ;
+                           rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle
+book:identifierVehicle rdf:type owl:DatatypeProperty ;
+                       rdfs:domain book:Vehicle ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "identifier" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#label
