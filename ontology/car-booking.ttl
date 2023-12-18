@@ -48,19 +48,23 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  https://auroral.iot.linkeddata.es/def/car-booking#hasAddress
 book:hasAddress rdf:type owl:ObjectProperty ;
                 rdfs:range book:Address ;
+                rdfs:comment "Relationship between an object (user, cehicle, etc) and its address" ;
                 rdfs:label "has address" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#madeBy
 book:madeBy rdf:type owl:ObjectProperty ;
             rdfs:domain book:Reservation ;
-            rdfs:range core:User .
+            rdfs:range core:User ;
+            rdfs:comment "A relationship between the reservation and the person who make it" ;
+            rdfs:label "made by" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#makesReservation
 book:makesReservation rdf:type owl:ObjectProperty ;
                       rdfs:domain core:User ;
                       rdfs:range book:Reservation ;
+                      rdfs:comment "A relationship between the person and the reservation that he made" ;
                       rdfs:label "makes reservation" .
 
 
@@ -68,6 +72,7 @@ book:makesReservation rdf:type owl:ObjectProperty ;
 book:relatedTo rdf:type owl:ObjectProperty ;
                rdfs:domain book:Reservation ;
                rdfs:range book:Vehicle ;
+               rdfs:comment "A relationship between the reservation and the object about it" ;
                rdfs:label "related to" .
 
 
@@ -79,6 +84,7 @@ book:relatedTo rdf:type owl:ObjectProperty ;
 book:address rdf:type owl:DatatypeProperty ;
              rdfs:domain book:Address ;
              rdfs:range xsd:string ;
+             rdfs:comment "Information about the address of the user or the vehicle" ;
              rdfs:label "address" .
 
 
@@ -86,6 +92,7 @@ book:address rdf:type owl:DatatypeProperty ;
 book:brand rdf:type owl:DatatypeProperty ;
            rdfs:domain book:Vehicle ;
            rdfs:range xsd:string ;
+           rdfs:comment "The brand of the vehicle" ;
            rdfs:label "brand" .
 
 
@@ -93,6 +100,7 @@ book:brand rdf:type owl:DatatypeProperty ;
 book:bufferedEnd rdf:type owl:DatatypeProperty ;
                  rdfs:domain book:Reservation ;
                  rdfs:range xsd:dateTime ;
+                 rdfs:comment "The buffered end of a reservation" ;
                  rdfs:label "buffered end" .
 
 
@@ -100,6 +108,7 @@ book:bufferedEnd rdf:type owl:DatatypeProperty ;
 book:city rdf:type owl:DatatypeProperty ;
           rdfs:domain book:Address ;
           rdfs:range xsd:string ;
+          rdfs:comment "The city specified in an address" ;
           rdfs:label "city" .
 
 
@@ -107,19 +116,23 @@ book:city rdf:type owl:DatatypeProperty ;
 book:created rdf:type owl:DatatypeProperty ;
              rdfs:domain book:Reservation ;
              rdfs:range xsd:dateTime ;
+             rdfs:comment "The created date of a reservation" ;
              rdfs:label "created" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation
 book:identifierReservation rdf:type owl:DatatypeProperty ;
                            rdfs:domain book:Reservation ;
-                           rdfs:range xsd:string .
+                           rdfs:range xsd:string ;
+                           rdfs:comment "The identifier of a reservation" ;
+                           rdfs:label "identifier reservation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#identifierVehicle
 book:identifierVehicle rdf:type owl:DatatypeProperty ;
                        rdfs:domain book:Vehicle ;
                        rdfs:range xsd:string ;
+                       rdfs:comment "The identifier of a vehicle" ;
                        rdfs:label "identifier" .
 
 
@@ -127,6 +140,7 @@ book:identifierVehicle rdf:type owl:DatatypeProperty ;
 book:label rdf:type owl:DatatypeProperty ;
            rdfs:domain book:Vehicle ;
            rdfs:range xsd:string ;
+           rdfs:comment "The label of a vehicle" ;
            rdfs:label "label" .
 
 
@@ -134,6 +148,7 @@ book:label rdf:type owl:DatatypeProperty ;
 book:liftOffer rdf:type owl:DatatypeProperty ;
                rdfs:domain book:Reservation ;
                rdfs:range xsd:boolean ;
+               rdfs:comment "The lift offer of a reservation" ;
                rdfs:label "lift offer" .
 
 
@@ -141,6 +156,7 @@ book:liftOffer rdf:type owl:DatatypeProperty ;
 book:model rdf:type owl:DatatypeProperty ;
            rdfs:domain book:Vehicle ;
            rdfs:range xsd:string ;
+           rdfs:comment "The model of a vehicle" ;
            rdfs:label "model" .
 
 
@@ -148,19 +164,23 @@ book:model rdf:type owl:DatatypeProperty ;
 book:note rdf:type owl:DatatypeProperty ;
           rdfs:domain book:Reservation ;
           rdfs:range xsd:string ;
+          rdfs:comment "The note of a reservation" ;
           rdfs:label "note" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#purpose
 book:purpose rdf:type owl:DatatypeProperty ;
              rdfs:domain book:Reservation ;
-             rdfs:range xsd:string .
+             rdfs:range xsd:string ;
+             rdfs:comment "The purpose of a reservation" ;
+             rdfs:label "purpose" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#reservationEnd
 book:reservationEnd rdf:type owl:DatatypeProperty ;
                     rdfs:domain book:Reservation ;
                     rdfs:range xsd:dateTime ;
+                    rdfs:comment "The end date of a reservation" ;
                     rdfs:label "reservation end" .
 
 
@@ -168,6 +188,7 @@ book:reservationEnd rdf:type owl:DatatypeProperty ;
 book:reservationStart rdf:type owl:DatatypeProperty ;
                       rdfs:domain book:Reservation ;
                       rdfs:range xsd:dateTime ;
+                      rdfs:comment "The start date of a reservation" ;
                       rdfs:label "reservation start" .
 
 
@@ -175,6 +196,7 @@ book:reservationStart rdf:type owl:DatatypeProperty ;
 book:state rdf:type owl:DatatypeProperty ;
            rdfs:domain book:Reservation ;
            rdfs:range xsd:string ;
+           rdfs:comment "The state of a reservation" ;
            rdfs:label "state" .
 
 
@@ -182,13 +204,15 @@ book:state rdf:type owl:DatatypeProperty ;
 book:timeZone rdf:type owl:DatatypeProperty ;
               rdfs:domain book:Vehicle ;
               rdfs:range xsd:string ;
-              rdfs:label "time zone>" .
+              rdfs:comment "The time Zone of a vehicle" ;
+              rdfs:label "time zone" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#type
 book:type rdf:type owl:DatatypeProperty ;
           rdfs:domain book:Vehicle ;
           rdfs:range xsd:string ;
+          rdfs:comment "The type of a vehicle" ;
           rdfs:label "type" .
 
 
@@ -196,6 +220,7 @@ book:type rdf:type owl:DatatypeProperty ;
 book:zip rdf:type owl:DatatypeProperty ;
          rdfs:domain book:Address ;
          rdfs:range xsd:string ;
+         rdfs:comment "The zip code of an address" ;
          rdfs:label "zip" .
 
 
@@ -205,21 +230,25 @@ book:zip rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#Address
 book:Address rdf:type owl:Class ;
+             rdfs:comment "The information related to the address of  given entity" ;
              rdfs:label "Address" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#Reservation
 book:Reservation rdf:type owl:Class ;
+                 rdfs:comment "The information about the reservation process of something (reservation of vehicle for example)" ;
                  rdfs:label "Reservation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/car-booking#Vehicle
 book:Vehicle rdf:type owl:Class ;
+             rdfs:comment "The object to which the reservation applies" ;
              rdfs:label "Vehicle" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#User
 core:User rdf:type owl:Class ;
+          rdfs:comment "The user who makes the reservation" ;
           rdfs:label "User" .
 
 
