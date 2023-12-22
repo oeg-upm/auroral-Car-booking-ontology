@@ -93,6 +93,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#identifierReservation",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
     "Vehicle" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/car-booking#Vehicle"
     },

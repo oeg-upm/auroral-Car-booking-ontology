@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"vtc:Test1" -> "vtc:TestSuitecar-booking" [ label = "vtc:belongsTo" ];
+	"vtc:Test4" -> "vtc:TestSuitecar-booking" [ label = "vtc:belongsTo" ];
+	"vtc:Test2" -> "vtc:TestSuitecar-booking" [ label = "vtc:belongsTo" ];
+	"vtc:Test5" -> "vtc:TestSuitecar-booking" [ label = "vtc:belongsTo" ];
+	"vtc:Test3" -> "vtc:TestSuitecar-booking" [ label = "vtc:belongsTo" ];
+
+}
